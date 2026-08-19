@@ -216,3 +216,66 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# === Python (github/gitignore Python.gitignore, trimmed to common bits) ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# === Windows ===
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# === macOS (harmless to keep even if teammates are on Windows) ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === Editors ===
+.vscode/
+.idea/
+*.swp
+
+# === Project-specific: dataset, weights, generated outputs ===
+ham10000/
+*.csv
+*.pth
+*.pt
+*.ckpt
+eval_plots/
+*.png
+*.jpg
+*.jpeg
+
+# === Secrets -- never commit these ===
+kaggle.json
+.streamlit/secrets.toml
